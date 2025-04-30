@@ -16,24 +16,26 @@ const COLLECTIONS = {
 
 const propertyTypes = [
   "House",
-  "Townhomes",
+  "Townhouse",
   "Condos",
-  "Duplexes",
-  "Studios",
+  "Duplex",
+  "Studio",
   "Villa",
-  "Apartments",
+  "Apartment",
   "Others",
 ];
 
 const facilities = [
   "Laundry",
-  "Car Parking",
-  "Sports Center",
-  "Cutlery",
+
+  "Parking",
+
   "Gym",
-  "Swimming pool",
+
   "Wifi",
-  "Pet Center",
+
+  "Pet-friendly"
+
 ];
 
 function getRandomSubset<T>(
@@ -154,8 +156,8 @@ async function seed() {
         propertiesImages.length - 1 >= i
           ? propertiesImages[i]
           : propertiesImages[
-              Math.floor(Math.random() * propertiesImages.length)
-            ];
+          Math.floor(Math.random() * propertiesImages.length)
+          ];
 
       const property = await databases.createDocument(
         config.databaseId!,
