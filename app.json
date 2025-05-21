@@ -45,11 +45,26 @@
             "./assets/fonts/Rubik-SemiBold.ttf"
           ]
         }
-      ]
-
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "bd736391-9b2d-4e50-b546-434f980072b1"
+      }
+    },
+    "owner": "yahyaturunc",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/bd736391-9b2d-4e50-b546-434f980072b1"
     }
   }
 }
